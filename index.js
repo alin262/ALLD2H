@@ -1,11 +1,12 @@
-           var navbar = document.getElementById("navbar")
-            var menu =document.getElementById("menu")
-window.onscroll = function(){
-    if (window.pageYOffset > menu.offsetTop ){
-        navbar.classList.add("sticky")
-    }
-    else{
-        navbar.classList.remove("sticky")
-    }
-
-}
+  window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("myHeader");
+        var sticky = navbar.offsetTop;
+            
+     function myFunction() {
+       if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+    } else {
+                navbar.classList.remove("sticky");
+           }
+ }
+    
